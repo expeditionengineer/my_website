@@ -2,7 +2,7 @@ import React from 'react';
 
 interface PageProps {
     heading: string,
-    text: string,
+    text: React.JSX.Element,
 }
 
 const PageBase: React.FC<PageProps> = ({heading, text}) => {

@@ -4,7 +4,7 @@ import PageBase from './page_base';
 
 const Skills: React.FC = () => {
     
-    const text: JSX.Element = (
+    const text: React.JSX.Element = (
         <>
             Few of my skills
         </>

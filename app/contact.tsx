@@ -7,7 +7,7 @@ import linkedInLogo from './images/LI-In-Bug.png';
 
 const Contact: React.FC = () => {
 
-    const text: JSX.Element = (
+    const text: React.JSX.Element = (
         <>
             <p>Connect with me via social media or check out my projects on github:</p>
             <ol className="flex flex-col list-disc-none pl-5 pt-5 gap-5">

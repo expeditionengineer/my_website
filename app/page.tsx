@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import NavBar from "./navbar";
 import Header from "./header";
 import About from "./about";

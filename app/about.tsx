@@ -3,7 +3,7 @@ import React from 'react';
 import PageBase from './page_base';
 
 const About: React.FC = () => {
-    const text: JSX.Element = (
+    const text: React.JSX.Element = (
         <>
             <p>I studied aeronautical & astronautical engineering at the technical university Berlin.
             I focused my studies on scientific simulation, including computational fluid dynamics (CFD),

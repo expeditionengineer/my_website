@@ -4,7 +4,7 @@ import PageBase from './page_base';
 
 const Projects: React.FC = () => {
     
-    const text: JSX.Element = (
+    const text: React.JSX.Element = (
         <>
             My past and on-going projects:
         </>

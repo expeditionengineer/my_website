@@ -17,14 +17,13 @@ const Header: React.FC = () => {
     ]
     const [currentSkillIndex, setCurrentSkillIndex] = useState(0);
     const [currentSkillText, setCurrentSkillText] = useState(skills[0].name[0])
-    const [currentPadding, setCurrentPadding] = useState(0);
 
 
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentSkillIndex((prevIndex) => (prevIndex + 1) % skills.length);
         }, skills[currentSkillIndex].displayLength * 1000);
-
+        console.log(interval)
     }, []);
 
     useEffect(() => {
@@ -45,7 +44,7 @@ const Header: React.FC = () => {
     return (
         <div className="flex flex-col gap-8 pt-30">
             <div className="flex flex-row gap-8">
-                <span className="text-4xl font-bold text-yellow-600">Tobias</span> _ <span style={{paddingLeft: currentPadding.toString() + "px"}} className="text-4xl text-white-700">{currentSkillText}</span>
+                <span className="text-4xl font-bold text-yellow-600">Tobias</span> _ <span className="text-4xl text-white-700">{currentSkillText}</span>
             </div>
             <div className="w-100 text-xl">
                 <p>Master of science of aeronautical and astronautical engineering from technical university Berlin🇩🇪. Multiple years of experience working in engineering research groups in the fields of turbomachinery acoustics, flight dynamics and flight control, fluid dynamics and building energy environment. Strong interest in software engineering and web-development.</p>

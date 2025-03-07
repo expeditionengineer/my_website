@@ -14,7 +14,7 @@ const slides = [
 
 const SlideShow: React.FC = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
-
+    console.log(currentSlide);
     const nextSlide = () => {
         setCurrentSlide((prev) => (prev + 1) % slides.length);
     };
