@@ -21,7 +21,10 @@ jobs:
       
       - name: Build App
         run: npm run build
-      
+
+      - name: Create relative paths to assets
+        run: sed -i "s|/_next|./_next|g" dist/index.html
+
       - name: Deploy to github pages
         uses: peaceiris/actions-gh-pages@v4
         with:

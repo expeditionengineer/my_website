@@ -6,9 +6,15 @@ const Skills: React.FC = () => {
     
     const text: React.JSX.Element = (
         <>
-            Few of my skills
+            Few of my skills:
         </>
     )
+
+    // const RightSide: React.JSX.Element = (
+    //     <>
+        
+    //     </>
+    // )
     
     return (
         <>
