@@ -19,7 +19,7 @@ const NavBar: React.FC = () => {
     ]
     
     return (
-        <div className="flex flex-row gap-4">
+        <div className="flex flex-row gap-4 fixed right-0">
             {navbar_items.map((navItem: NavItemData) => {
                 return <NavBarItem name={navItem.name} index={navItem.id} key={navItem.id} />
             })}

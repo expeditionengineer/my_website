@@ -5,6 +5,24 @@
   --background: #171717;
 }
 
+@keyframes moveToCenter {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-django {
+  animation-name: moveToCenter;
+  animation-duration: 1s;
+}
+
+.hover\:move-to-center:hover {
+  animation: moveToCenter 0.5s forwards;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);

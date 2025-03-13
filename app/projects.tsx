@@ -12,7 +12,7 @@ const Projects: React.FC = () => {
     
     return (
         <>
-            <PageBase heading={"Projects"} text={text} />
+            <PageBase heading={"Projects"} text={text} rightSide={<></>} />
         </>
     )
 }

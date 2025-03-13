@@ -8,8 +8,9 @@ const slides = [
     {
         id: 1,
         image: rrtImage,
-        caption: 'Slide 1'
+        caption: 'Calculation of smooth quadrocopter trajectories under consideration of the current wind conditions.'
     },
+
 ];
 
 const SlideShow: React.FC = () => {
@@ -24,10 +25,13 @@ const SlideShow: React.FC = () => {
     };
 
     return (
-        <div className="flex gap-5 flex-row mt-30 p-10 border border-grey-500 rounded">
-            <button onClick={prevSlide}>{"<"} Prev</button>
-            <Image src={slides[0].image} alt="Hi" />
-            <button onClick={nextSlide}>Next {">"}</button>
+        <div className="flex gap-5 flex-row mt-30 p-20 border border-grey-500 rounded">
+            <button onClick={prevSlide}>{"<"}</button>
+            <div className="flex flex-col gap-5">
+                <Image src={slides[currentSlide].image} alt="Hi" />
+                <p>{slides[currentSlide].caption}</p>
+            </div> 
+            <button onClick={nextSlide}>{">"}</button>
         </div>        
     );
 };

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import PageBase from './page_base';
+import SlideShow from './slide_show';
 
 const About: React.FC = () => {
     const text: React.JSX.Element = (
@@ -17,9 +18,11 @@ const About: React.FC = () => {
                 </ul>
         </>
     );
+    const slideShow: React.JSX.Element = (<SlideShow />)
+
     return (
         <>
-            <PageBase heading={"About"} text={text} />
+            <PageBase heading={"About"} text={text} rightSide={slideShow} />
         </>
     );
 };

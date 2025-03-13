@@ -21,13 +21,10 @@ export default function Home() {
             <div>
               <About /> 
             </div>
-            <div>
-              <SlideShow />
-            </div>
           </div>
         </section>
         <section id="skills" className="min-h-screen">
-          <Skills />
+          <Skills /> 
         </section>
         <section id="projects" className="min-h-screen">
           <Projects />
