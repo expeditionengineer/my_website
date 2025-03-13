@@ -21,10 +21,10 @@ const Skills: React.FC = () => {
     const jsCategorySection = useRef<HTMLImageElement>(null);
     
     const onClickPythonLogo = () => {
-        clickedPythonLogo ? setClickedPythonLogo(false): setClickedPythonLogo(true);
+        setClickedPythonLogo(!clickedPythonLogo);
     };
     const onClickJsLogo = () => {
-        clickedJsLogo ? setClickedJsLogo(false): setClickedJsLogo(true);
+        setClickedJsLogo(!clickedJsLogo);
     }; 
     
     useEffect(() => {
@@ -49,7 +49,7 @@ const Skills: React.FC = () => {
                 jsCategorySection.current.classList.remove('animate-django');
             }
         }
-    }, [clickedPythonLogo]);
+    }, [clickedJsLogo]);
 
     const text: React.JSX.Element = (
         <>
@@ -71,6 +71,7 @@ const Skills: React.FC = () => {
                         alt="Javascript-logo"
                         width={100}
                         className="cursor-pointer transition-transform duration-300 hover:scale-110"
+                        onClick={onClickJsLogo}
                     />
                 </li>
             </ol>

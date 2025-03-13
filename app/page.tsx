@@ -1,7 +1,6 @@
 import NavBar from "./navbar";
 import Header from "./header";
 import About from "./about";
-import SlideShow from './slide_show';
 import Skills from './skills';
 import Contact from './contact';
 import Projects from './projects';

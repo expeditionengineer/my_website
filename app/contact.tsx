@@ -29,7 +29,7 @@ const Contact: React.FC = () => {
 
     return (
         <>
-            <PageBase heading={"Contact"} text={text} />
+            <PageBase heading={"Contact"} text={text} rightSide={<></>} />
         </>
     );
 }
