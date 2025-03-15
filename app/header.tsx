@@ -50,8 +50,8 @@ const Header: React.FC = () => {
                 <p>Master of science of aeronautical and astronautical engineering from technical university Berlin🇩🇪. Multiple years of experience working in engineering research groups in the fields of turbomachinery acoustics, flight dynamics and flight control, fluid dynamics and building energy environment. Strong interest in software engineering and web-development.</p>
             </div>
             <div className="flex flex-row gap-10">
-                <a href="#contact" className="bg-yellow-600 font-bold px-6 rounded text-2xl">Contact</a>
-                <a href="#about" className="bg-white font-bold px-6 rounded text-yellow-600 text-2xl">About me</a>
+                <a href="#contact" className="bg-yellow-600 font-bold px-6 rounded text-2xl hover:scale-110 ">Contact</a>
+                <a href="#about" className="bg-white font-bold px-6 rounded text-yellow-600 text-2xl hover:scale-110 ">About me</a>
             </div>
         </div>
     )

@@ -26,12 +26,12 @@ const SlideShow: React.FC = () => {
 
     return (
         <div className="flex gap-5 flex-row mt-30 p-20 border border-grey-500 rounded">
-            <button onClick={prevSlide}>{"<"}</button>
+            <button className="hover:scale-110 cursor-pointer" onClick={prevSlide}>{"<"}</button>
             <div className="flex flex-col gap-5">
                 <Image src={slides[currentSlide].image} alt="Hi" />
                 <p>{slides[currentSlide].caption}</p>
             </div> 
-            <button onClick={nextSlide}>{">"}</button>
+            <button className="hover:scale-110 cursor-pointer" onClick={nextSlide}>{">"}</button>
         </div>        
     );
 };
