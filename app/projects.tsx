@@ -1,5 +1,4 @@
 import React from 'react';
-import PageBase from './page_base';
 
 const Projects: React.FC = () => {
     const text: React.JSX.Element = (
